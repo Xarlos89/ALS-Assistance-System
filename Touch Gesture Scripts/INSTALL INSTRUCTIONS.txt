@@ -1,4 +1,4 @@
-1. Install Python with .exe file
+1. Install Python with .exe file https://www.python.org/downloads/
 
 2. Install PIP (Should be in the python install, but if not, install pip)
 py -m pip --version
