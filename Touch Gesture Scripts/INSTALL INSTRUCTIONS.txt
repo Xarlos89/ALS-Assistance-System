@@ -1,0 +1,8 @@
+1. Install Python with .exe file
+
+2. Install PIP (Should be in the python install, but if not, install pip)
+py -m pip --version
+py -m pip install -U pip
+
+3. Install PyAutoGUI
+py -m pip install pyautogui
