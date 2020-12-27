@@ -6,3 +6,5 @@ py -m pip install -U pip
 
 3. Install PyAutoGUI
 py -m pip install pyautogui
+
+Add these scripts to the arrow keys using "Hot Virtual Keyboard"
