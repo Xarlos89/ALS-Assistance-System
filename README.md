@@ -36,6 +36,10 @@ We tried a variety of mouth-tracking, eye gaze and facial movement tracking soft
 - http://www.cameramouse.org/ 
 - http://www.inference.org.uk/opengazer/
 
+### A note on Facial Tracking
+We struggled with getting the Webcam to track his face, since he was sitting about 2 meters from the camera. A workaround we discoverd was to use a streaming software called Splitcam. It allows you to digitally zoom the webcam feed, and thus allowed us to zoom in on his face and track it better. I highly reccomend using SplitCam with E-Viacam. Website below
+https://splitcam.com/
+
 # Keyboards
 While Windows 10 comes standard with a virtual keyboard, it proved to be tiring and cumbersome to use when paired with a facial tracking mouse.
 To remedy this, we started searching for alternatives. Most alternatives are remakes of the standard keyboard, and are honestly not better than the Windows 10 keyboard.
