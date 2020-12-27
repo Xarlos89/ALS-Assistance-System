@@ -38,4 +38,20 @@ https://hotvirtualkeyboard.com/
 #### Some notable runner ups were:
 https://hodgef.com/simple-keyboard/
 https://www.comfortsoftware.com/on-screen-keyboard/
+
+### Scripts
+The scripts are custom and written by me using Python and a library called PyAutoGUI (https://pyautogui.readthedocs.io/en/latest/)
+I wrote 4 scripts, each one moves the mouse to a specific position on screen, clicks and drags to another point on the screen. It's a bit of a crude way of doing things but it works. 
+PyAutoGUI has window handling planned for a future update (https://pyautogui.readthedocs.io/en/latest/roadmap.html?highlight=select%20window#roadmap)
+This would be much nicer, because instead of choosing specific points on the screen, we could simply select a window, and then choose points relative to that window. But that's an update for another time. 
+*** Would love a better solution to handling touch gestures, but this is the best i've got right now ***
+
+# Phone
+### Mirring the phone on the PC screen
+Windows comes with a program called "Your Phone". It works well on the computer we built, however I cant seem to get it to run on my test machine. (It's quite buggy)
+Instead I'm using an open-source program called Scrcpy (https://github.com/Genymobile/scrcpy) to mirror the phone on the screen. 
+Clicking is handled fine with E-viacam, and touch gestures are handled with my custom scripts meantioned above. 
+A problem we encountered was the microphone picking up sound from far away, since the phone isn't always nearby. To remedy this, we attached an Anker PowerConf bluetooth conference speaker to the computer via USB, and to the phone using bluetooth. Now when calls are received, he sees this on the screen and can click answer. The phone runs the sound and microphone through the bluetooth speaker and he is able to speak clearly on the phone. 
+
+
   
