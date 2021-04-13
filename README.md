@@ -41,15 +41,11 @@ https://www.comfortsoftware.com/on-screen-keyboard/
 
 ### Scripts
 The scripts are custom and written by me using Python and a library called PyAutoGUI (https://pyautogui.readthedocs.io/en/latest/)
-I wrote 4 scripts, each one moves the mouse to a specific position on screen, clicks and drags to another point on the screen. It's a bit of a crude way of doing things but it works. 
-PyAutoGUI has window handling planned for a future update (https://pyautogui.readthedocs.io/en/latest/roadmap.html?highlight=select%20window#roadmap)
-This would be much nicer, because instead of choosing specific points on the screen, we could simply select a window, and then choose points relative to that window. But that's an update for another time. 
-*** Would love a better solution to handling touch gestures, but this is the best i've got right now ***
+We currently use 5 different scripts to handle different touch functions. We have mapped these scripts to run when the arrow keys of the On-screen keyboard are pushed. Pressing the up arrow activates a swipe up, pressing down activates a swipe down, left is a left swipe and right is a right swipe. We also have a seperate button to pull down the top menu of the android phone. 
 
 # Phone
 ### Mirring the phone on the PC screen
-Windows comes with a program called "Your Phone". It works well on the computer we built, however I cant seem to get it to run on my test machine. (It's quite buggy)
-Instead I'm using an open-source program called Scrcpy (https://github.com/Genymobile/scrcpy) to mirror the phone on the screen. 
+We are using an open-source program called Scrcpy (https://github.com/Genymobile/scrcpy) to mirror the phone on the screen. SCRCPY allows us to mirror the screen of the phone on the TV screen, and connect this wirelessly. We are using a simple .BAT file to open the python script, however I may convert all these .py scripts to .exe files in the future. 
 Clicking is handled fine with E-viacam, and touch gestures are handled with my custom scripts meantioned above. 
 A problem we encountered was the microphone picking up sound from far away, since the phone isn't always nearby. To remedy this, we attached an Anker PowerConf bluetooth conference speaker to the computer via USB, and to the phone using bluetooth. Now when calls are received, he sees this on the screen and can click answer. The phone runs the sound and microphone through the bluetooth speaker and he is able to speak clearly on the phone. 
 
